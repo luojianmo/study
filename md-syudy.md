@@ -1,6 +1,6 @@
 ## MaHua是什么?
 * [超链接测试](./lib/test/test.html)
-* <a href="file:///Users/luojianmo/Documents/code/study/lib/test/test.html" target="_blank">a标签测试</a>
+* <a href="https://www.baidu.com/" target="_blank">百度</a>
 
 一个在线编辑markdown文档的编辑器
 
