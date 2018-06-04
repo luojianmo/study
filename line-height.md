@@ -1,8 +1,8 @@
 # line-height
 
-## line-height 定义
+* line-height 定义
 
-* line-height：行高指的是两行文字基线之间的距离。
+  line-height：行高指的是两行文字基线之间的距离。
 
   ### 什么是基线：
 
