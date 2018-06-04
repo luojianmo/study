@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      font-size: 30px;
+      width: 500px;
+    }
+
+    .p1 {
+      line-height: 45px;
+      font-family: "Microsoft YaHei";
+      background: red;
+    }
+
+    .p2 {
+      line-height: 45px;
+      font-family: "Microsoft YaHei";
+      background: red;
+    }
+
+    .p3 {
+      line-height: 1.5em;
+      font-family: "Microsoft YaHei";
+      background: red;
+    }
+
+    .p4 {
+      line-height: 1.5rem;
+      font-family: "Microsoft YaHei";
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1">
+    <p class="p1">line-height: 45px;
+      <br>30px</p>
+  </div>
+
+  <div class="div1">
+    <p class="p2">line-height: 45pt;
+      <br>30px</p>
+  </div>
+
+  <div class="div1">
+    <p class="p3">line-height: 1.5em;
+      <br>30px</p>
+  </div>
+
+  <div class="div1">
+    <p class="p4">line-height: 1.5rem;
+      <br>30px</p>
+  </div>
+  <input type="number" />
+  <button onclick="handleUpdateFontSize('body')">修改body字体</button>
+  <button onclick="handleUpdateFontSize('html')">修改html字体</button>
+</body>
+
+<script>
+  function handleUpdateFontSize(type) {
+    let size = document.querySelector('input').value
+    if (!size || size < 0) return alert('请输入大于0的正数。');
+    document.querySelector(type).style.fontSize = size + 'px';
+  }
+
+</script>
+
+</html>
