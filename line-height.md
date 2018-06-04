@@ -4,7 +4,7 @@
 
 * line-height：行高指的是两行文字基线之间的距离。
 
-  ###  什么是基线：
+  ### 什么是基线：
 
   ![mahua](./public/images/base-line.jpeg)
 
