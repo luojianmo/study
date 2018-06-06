@@ -1,6 +1,6 @@
 # line-height
 
-* line-height 定义
+- line-height 定义
 
   line-height：行高指的是两行文字基线之间的距离。
 
@@ -18,7 +18,7 @@
 
   ![mahua](./public/images/line-height.jpg)
 
-* line-height 与行内框盒子模型
+- line-height 与行内框盒子模型
 
   所有内联元素的样式表现都与行内框盒子模型有关！
 
@@ -40,7 +40,7 @@
 
   4、p 标签所在的包含盒子(containing box)，此盒子有一行一行的行框盒子组成。
 
-* line-height 的高度机理(机制原理)
+- line-height 的高度机理(机制原理)
 
   内联元素的高度是由行高决定的！
 
@@ -54,9 +54,9 @@
 
   注意：
 
-  * 内容区域(content area)高度只与字号(font-size)以及字体(font-size)有关，与 line-height 没有任何关系。
+  - 内容区域(content area)高度只与字号(font-size)以及字体(font-size)有关，与 line-height 没有任何关系。
 
-  * 在 simsun 字体(即宋体)下，内容区域高度等于文字大小值。所以，在 simsun 字体下，font-size+行间距=line-height。
+  - 在 simsun 字体(即宋体)下，内容区域高度等于文字大小值。所以，在 simsun 字体下，font-size+行间距=line-height。
 
   行间距上下拆分，就有了半行间距。
 
@@ -96,7 +96,7 @@
 
   含多个行框盒子的包含容器，多行文本的高度就是单行文本高度的累加。
 
-- line-height 各类属性值
+* line-height 各类属性值
 
   line-height 支持的属性值：normal、number、length、percent、inherit(继承)
 
@@ -407,10 +407,16 @@
   <html>
   ```
 
+  [查看页面](http://localhost:4000/html/line-height-param.html)
+
   答案：从计算上来讲，是没有任何差别的。但应用元素有差别：
 
   line-height:1.5：所有可继承元素根据 font-size 重计算行高。
 
   line-height:150%/1.5em：当前元素根据 font-size 计算行高，继承给下面的元素。
 
-  [查看页面](http://localhost:4000/html/line-height-param.html)
+* 学习资料
+
+  [CSS 深入理解之 line-height(视频)](http://www.imooc.com/learn/403)
+
+  [CSS 深入理解之 line-height(文档)](https://www.bbsmax.com/A/8Bz84NM6zx/)
