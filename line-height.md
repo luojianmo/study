@@ -80,15 +80,26 @@ line-height：行高指的是两行文字基线之间的距离。
   <meta charset="UTF-8">
   <title>line-height</title>
   <style>
+    p {
+      width: 500px;
+    }
     .test1 {
       font-size: 36px;
       line-height: 1px;
       background: green;
       border: 1px solid #FFF
     }
+
     .test2 {
       font-size: 0px;
       line-height: 36px;
+      background: green;
+      border: 1px solid #FFF
+    }
+
+    .test3 {
+      font-size: 32px;
+      line-height: 24px;
       background: green;
       border: 1px solid #FFF
     }
@@ -98,14 +109,21 @@ line-height：行高指的是两行文字基线之间的距离。
   <p class="test1">测试：行高是由字体撑开的</p>
   <br>
   <br>
-  <p class="test2">测试：行高是由line-height决定的</p>
+  <p class="test2">测试：行高是由line-height 决定的</p>
+  <br>
+  <br>
+  <p class="test3">测试：font-size: 32px;line-height: 24px;</p>
 </body>
 </html>
 ```
 
 [查看页面](http://localhost:4000/html/height.html)
 
-总结：行高决定内联盒子的高度；行间距墙头草，可大可小(甚至负值)，保证高度正好等于行高。行间距为负值时，举例说明，在 simsun 字体下，如果 line-height 小于 font-size，inline box 会优先于行高，以保证 inline box 的高度正好等于行高。例：font-size: 16px; line-height: 12px; inline box 高度为 12px。content area 会溢出，inline box 的顶部和底部半行高会折叠起来，以保证 inline box 的高度。图示如下：
+总结：
+  * 1、行高决定内联盒子的高度；
+  * 2、行间距墙头草，可大可小(甚至负值)，保证高度正好等于行高。
+  在宋体字体下，如果 line-height 小于 font-size，inline box 会优先于行高，以保证 inline box 的高度正好等于行高。
+  例：font-size: 16px; line-height: 12px; inline box 高度为 12px。content area 会溢出，content area 的顶部和底部半行高会折叠起来，以保证 inline box 的高度。
 
 含多个行框盒子的包含容器，多行文本的高度就是单行文本高度的累加。
 <br/>
