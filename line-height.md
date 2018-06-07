@@ -122,6 +122,7 @@ line-height：行高指的是两行文字基线之间的距离。
 总结：
   * 1、行高决定内联盒子的高度；
   * 2、行间距墙头草，可大可小(甚至负值)，保证高度正好等于行高。
+  
   在宋体字体下，如果 line-height 小于 font-size，inline box 会优先于行高，以保证 inline box 的高度正好等于行高。
   例：font-size: 16px; line-height: 12px; inline box 高度为 12px。content area 会溢出，content area 的顶部和底部半行高会折叠起来，以保证 inline box 的高度。
 <br/>
