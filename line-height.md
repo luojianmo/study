@@ -63,7 +63,7 @@ line-height：行高指的是两行文字基线之间的距离。
 
 2)、行高只是幕后黑手，高度的表现不是行高，而是内容区域和行间距。
 
-只不过，内容区域高度(content area)+行间距(vertical spacing)=行高(line-height)
+内容区域高度(content area)+行间距(vertical spacing)=行高(line-height)
 
 注意：
 
